@@ -1,88 +1,24 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+/* Estilos personalizados */
 
+/* Estilos para el navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d2a9a9;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-}
-
-.navbar-logo {
-    margin-right: auto;
-}
-
-.navbar-menus {
-    display: flex;
 }
 
 .navbar-menu {
-    margin-left: 20px;
+    display: flex;
+    gap: 20px;
 }
 
-.navbar-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-menu ul li {
-    display: inline-block;
-}
-
-.navbar-menu ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.navbar-toggle-btn {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.navbar-toggle-btn span {
-    height: 2px;
-    width: 25px;
-    background-color: white;
-    margin-bottom: 5px;
-    display: block;
-    border-radius: 2px;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar-menus {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-    }
-
-    .navbar-menus.active {
-        display: flex;
-    }
-
+/* Estilos para el toggle del navbar en dispositivos móviles */
+@media (max-width: 768px) {
     .navbar-menu {
-        margin: 10px 0;
+        display: none;
     }
 
-    .navbar-menu ul li {
+    .navbar-toggler {
         display: block;
-    }
-
-    .navbar-menu ul li a {
-        padding: 10px;
-        display: block;
-    }
-
-    .navbar-toggle-btn {
-        display: flex;
     }
 }
